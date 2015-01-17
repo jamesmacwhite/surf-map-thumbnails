@@ -1,23 +1,21 @@
 # Surf Map Thumbnails
 
-Additional map thumbnails for surf maps for use in SourceBans and other web apps that display map thumbnail images.
+Map thumbnails for surf maps for use in SourceBans and other web apps that display map thumbnail images.
 
-All map images are taken directly in-game and saved at 1920 x 1080 at 1080p.
+All map images are taken directly in-game and saved at 1920 x 1080.
 
-A batch conversion process is automated to crop and resize images to the correct sizes for various web apps.
+An automated batch conversion process is used to automate the cropping of images to the correct sizes for various different web apps.
 
 ## Usage
 
-Simply upload the image folder path relative to the web app that supports displaying map images.
-
-The high resolution image folder is the original images at their native size when taken in-game.
+Simply upload the images within the folder of the web app.
 
 Currently supported web apps and image paths:
 
-* SourceBans - sourcebans/images/maps
-* XI Server Management (Invision Power Board) - uploads/servermgnt/maps
+* SourceBans - sourcebans/images/maps 340px x 225px
+* XI Server Management (Invision Power Board) - uploads/servermgnt/maps 160px x 120px
 
-## Creating your own map thumbnails
+## Capturing your own map images
 
 These instructions are written for Source based games. In order to create your own images you'll need the following:
 
@@ -25,10 +23,17 @@ These instructions are written for Source based games. In order to create your o
 * Local listen/LAN dedicated srcds server
 * `sv_cheats 1`
 * `cl_drawhud 0`
+* Image manipulation software
 
 I would recommend you create a local listen or LAN dedicated server as you'll need to run `sv_cheats 1` to disable HUD elements. Doing this on a public facing game server is massive security risk.
 
 For the best image capturing, go into spectator mode and disable the HUD, get into the position you want and then take a screen capture. This provide a clean map image without any overlays.
+
+## Generating your own thumbnails
+
+All original map images are stored in the high resolution folder. This is where your image manipulation tool will need to look for images when in a batch process.
+
+You will then need to generate recorded actions for each different image size you are generating where you crop to the correct size.
 
 ## Credits
 

@@ -30,5 +30,9 @@ I would recommend you create a local listen or LAN dedicated server as you'll ne
 
 For the best image capturing, go into spectator mode and disable the HUD, get into the position you want and then take a screen capture. This provide a clean map image without any overlays.
 
+## Credits
+
+All maps are copyright to their original creators. I take no credit in the maps featured in any map captures
+
 
 

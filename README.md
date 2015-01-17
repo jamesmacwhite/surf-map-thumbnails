@@ -17,4 +17,18 @@ Currently supported web apps and image paths:
 * SourceBans - sourcebans/images/maps
 * XI Server Management (Invision Power Board) - uploads/servermgnt
 
+## Creating your own map thumbnails
+
+These instructions are written for Source based games. In order to create your own images you'll need to the following:
+
+* An application like [Fraps](http://www.fraps.com/) for taking in-game screenshots and saving to disk directly.
+* Local listen/LAN dedicated srcds server
+* `sv_cheats 1`
+* `cl_drawhud 0`
+
+I would recommend you create a local listen or LAN dedicated server as you'll need to run `sv_cheats 1` to disable HUD elements. Doing this on a public facing game server is massive security risk.
+
+For the best image capturing, you can go into spectator mode, position yourself for the map capture and then run `cl_drawhud 0` which provide a clean image capture.
+
+
 
